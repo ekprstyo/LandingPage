@@ -143,6 +143,11 @@ table {
   src: url("/font/LexendDeca-Medium.ttf");
 }
 
+@font-face {
+  font-family: lexendDecaSemiBold;
+  src: url("/font/LexendDeca-SemiBold.ttf");
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -157,7 +162,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  box-shadow: 0 1px 5px -2px gray;
+  box-shadow: 0 1px 5px -2px #cccccc;
   position: fixed;
   z-index: 1;
 }
@@ -195,21 +200,19 @@ header img {
   padding-bottom: 30px;
 }
 
-.d-1 p {
+.d-1 p,
+.d-2 p {
   font: 16px lexendDecaLight;
   line-height: 27px;
-  letter-spacing: 1;
   padding: 0 10px 20px 0;
 }
 
 .d-1 button {
-  color: #ffffff;
   box-shadow: none;
   width: 100%;
   height: 100px;
   box-sizing: border-box;
-  padding: 5px 40px;
-  /* line-height: 57px; */
+  padding: 5px 50px;
   font: 18px lexendDecaMedium;
 }
 
@@ -225,13 +228,110 @@ header img {
 
 .d-2 {
   background-color: #f6f9fc;
+  color: #2e475d;
+  padding: 75px 10px 20px 15px;
+}
+
+.d-2 h3 {
+  font: 26px lexendDecaSemiBold;
+  padding-bottom: 25px;
+}
+
+.d-2 button {
+  display: block;
+  width: 100%;
+  height: 38px;
+  font: 14px lexendDecaMedium;
+}
+
+.d-2 .b-1 {
+  margin: 10px 0 20px;
+}
+
+.d-2 .b-2 {
+  color: #ff5c35;
+  background-color: #ffffff;
+  margin: 10px 0 55px;
 }
 
 .s-1 {
   background-color: #ffffff;
-  width: 90%;
-  margin: 20px auto;
-  box-shadow: 5px 10px;
+  width: 97%;
+  margin: 0 auto 25px;
+  box-shadow: 0px 0px 10px #eeeeee;
+  padding: 40px 20px 30px;
+  box-sizing: border-box;
+}
+
+.s-1 .img {
+  width: 30px;
+}
+
+.s-1 h3 {
+  display: inline-block;
+  font: 23px lexendDecaMedium;
+}
+
+.s-1 p {
+  font-size: 14px;
+}
+
+.s-1 hr {
+  border-top: 1px solid #cccccc;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  margin-top: 20px;
+}
+
+.s-1 h4 {
+  font: 16px lexendDecaLight;
+  margin-top: 20px;
+}
+
+.s-1 ul {
+  padding: 20px 0px;
+}
+
+.s-1 li {
+  display: flex;
+  align-items: center;
+  padding: 5px 0px;
+}
+
+.s-1 .check {
+  width: 22px;
+  margin-right: 10px;
+}
+
+.s-1 li {
+  font: 12px lexendDecaMedium;
+}
+
+.s-1 button {
+  height: 45px;
+  font-size: 17px;
+}
+
+.winning {
+  padding: 380px 40px 40px 40px;
+  margin-top: 110px;
+  background-image: url("img/Saloon-Table-Wild-West.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -40px 0;
+}
+
+.s-1 .h3-winning {
+  font-size: 19px;
+}
+
+.s-1 .p-winning {
+  font-size: 17px;
+  padding-bottom: 40px;
+}
+.s-1 .bt-winning {
+  width: 70%;
 }
 
 .d-3 {
@@ -249,6 +349,9 @@ header img {
 
 button {
   background-color: #ff5c35;
+  border: 1px solid #ff5c35;
+  border-radius: 3px;
+  color: #ffffff;
 }
 aside,
 footer {
